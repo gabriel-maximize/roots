@@ -1,0 +1,57 @@
+{
+	"name": "vida",
+	"plugin-id": "Sprite",
+	"sid": 623272484657853,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9288531,
+						"collisionPoly": {
+							"points": [
+								0.17,
+								0.17,
+								0.5,
+								0.2633333333333333,
+								0.8166666666666667,
+								0.18333333333333332,
+								0.8766666666666667,
+								0.5,
+								0.7,
+								0.7,
+								0.5,
+								0.9133333333333333,
+								0.2866666666666667,
+								0.7133333333333334,
+								0.11,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 623806315016214,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

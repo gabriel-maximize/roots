@@ -1,0 +1,486 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "vidas",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 508718366398820
+		},
+		{
+			"eventType": "variable",
+			"name": "vida_inimigo__1",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 731604038100979
+		},
+		{
+			"eventType": "variable",
+			"name": "vida_boss__1",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 785870329326840
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550529501226805,
+							"parameters": {
+								"variable": "vidas",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 894978607343793
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 509649307467288,
+							"parameters": {
+								"variable": "vidas",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 645722120927464
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "vida",
+							"sid": 326298029694949,
+							"parameters": {
+								"object": "personagem"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 829903865826507,
+							"parameters": {
+								"variable": "vidas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "hearths",
+							"sid": 696174370544927,
+							"parameters": {
+								"width": "Self.Width+72"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "vida",
+							"sid": 345834608917358
+						}
+					],
+					"sid": 512383655660644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 342815597173923
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 710532048668458,
+							"parameters": {
+								"object-to-create": "hearths",
+								"layer": "1",
+								"x": "30",
+								"y": "30",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "hearths",
+							"sid": 973198906512435,
+							"parameters": {
+								"width": "72 * 3"
+							}
+						}
+					],
+					"sid": 362771687898285
+				}
+			],
+			"sid": 749244894841446
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "animações",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 111524718454307,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 428892030813465,
+							"parameters": {
+								"animation": "\"Cima\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 457622089198948,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 773056290389372
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 465408454616387,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 263976954085395,
+							"parameters": {
+								"animation": "\"Frente\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 183587707443053,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 466740156563197
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 364639311616590,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 551234666082824,
+							"parameters": {
+								"animation": "\"Esquerda\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 598698528442794,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 210680796584868
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 890095449004563,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 888142911411806,
+							"parameters": {
+								"animation": "\"Direita\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 159519686592362,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 491414123618604
+				}
+			],
+			"sid": 478718223306830
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Colisões",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 225860201472813
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Combate",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "personagem",
+							"sid": 377776745808812,
+							"parameters": {
+								"object": "inimigo_1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 639769961735488,
+							"parameters": {
+								"variable": "vidas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "hearths",
+							"sid": 215278613506040,
+							"parameters": {
+								"width": "Self.Width-72"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 624295699040076,
+							"parameters": {
+								"variable": "vida_inimigo__1",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 674539552939824
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 110049605615263,
+							"parameters": {
+								"variable": "vida_inimigo__1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "inimigo_1",
+							"sid": 260363198838980
+						}
+					],
+					"sid": 572718212159147
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "personagem",
+							"sid": 810280480850149,
+							"parameters": {
+								"object": "boss_1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 939387147099529,
+							"parameters": {
+								"variable": "vida_boss__1",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 955237073907581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 626198381341339,
+							"parameters": {
+								"variable": "vida_boss__1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "boss_1",
+							"sid": 221221742405440
+						}
+					],
+					"sid": 721408756077550
+				}
+			],
+			"sid": 299951117365673
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Dialogo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "area_dialogo",
+							"sid": 334837002748277,
+							"parameters": {
+								"object": "personagem"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite2",
+							"sid": 163786241959757,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite5",
+							"sid": 905220946543485,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_dialogo1",
+							"sid": 501366006770291,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textname",
+							"sid": 404856147388168,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 995949222206045
+				}
+			],
+			"sid": 488874965398733
+		}
+	],
+	"sid": 149472374555292
+}
