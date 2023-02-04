@@ -586,6 +586,14 @@
 					"actions": [
 						{
 							"id": "set-visible",
+							"objectClass": "Sprite4",
+							"sid": 153429707356026,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
 							"objectClass": "Sprite2",
 							"sid": 163786241959757,
 							"parameters": {
