@@ -34,6 +34,147 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "audio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 517099986173282
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 615106453842706,
+							"parameters": {
+								"audio-file": "trilha-sonora",
+								"loop": "looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 451413382446029
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "personagem",
+							"sid": 462307611043678,
+							"parameters": {
+								"object": "vida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 504203627439168,
+							"parameters": {
+								"audio-file": "vida",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 163055061477377
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "personagem",
+							"sid": 302645044373806,
+							"parameters": {
+								"object": "npc__1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 334724978282810,
+							"parameters": {
+								"audio-file": "dialogo",
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 365185772554973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "boss_1",
+							"sid": 432789258536693
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 745217334431603,
+							"parameters": {
+								"audio-file": "parabens",
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 367701660086722
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "inimigo_1",
+							"sid": 350694585183853
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 626057578152088,
+							"parameters": {
+								"audio-file": "parabens",
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 510091178480436
+				}
+			],
+			"sid": 580228496287172
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "HUD",
 			"description": "",
 			"isActiveOnStart": true,

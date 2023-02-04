@@ -8,8 +8,15 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -23,56 +30,56 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Fonte de sprites",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Plano de Fundo em Blocos",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Mosaico",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Direções",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "TileMovement",
-			"name": "Movimento em grid",
+			"name": "Tile movement",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "bound",
-			"name": "Restrito ao layout",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Centrar em",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -95,7 +102,8 @@
 			"npc__1",
 			"boss_1",
 			"Teclado",
-			"area_dialogo"
+			"area_dialogo",
+			"Áudio"
 		],
 		"subfolders": []
 	},
@@ -125,33 +133,41 @@
 		"sound": {
 			"items": [
 				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.22.webm",
+					"name": "vida.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 772592195296896,
+					"sid": 307559885504092,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.23.webm",
+					"name": "parabens.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 215360819633215,
+					"sid": 597210093006409,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.24.webm",
+					"name": "dialogo.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 122572888317472,
+					"sid": 489167918261039,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.24_(1).webm",
+					"name": "morte.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 618004440746021,
+					"sid": 694360025216701,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "concluiu.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 357078947363280,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -159,23 +175,15 @@
 				{
 					"name": "WhatsApp_Audio_2023-02-04_at_13.13.25.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 334218214272084,
+					"sid": 634053000902315,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.27.webm",
+					"name": "trilha-sonora.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 537389172109505,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "WhatsApp_Audio_2023-02-04_at_13.13.27_(1).webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 233286464661508,
+					"sid": 915040131412083,
 					"file-info": {
 						"purpose": "none"
 					}
