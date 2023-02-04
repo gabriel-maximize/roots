@@ -103,7 +103,10 @@
 			"boss_1",
 			"Teclado",
 			"area_dialogo",
-			"Áudio"
+			"Áudio",
+			"Sprite",
+			"ajudai",
+			"textajuda"
 		],
 		"subfolders": []
 	},

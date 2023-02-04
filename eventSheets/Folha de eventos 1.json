@@ -626,6 +626,38 @@
 						}
 					],
 					"sid": 995949222206045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 731247082555988,
+							"parameters": {
+								"key": 73
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ajudai",
+							"sid": 339280164254749,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textajuda",
+							"sid": 932653780183969,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 981731288929048
 				}
 			],
 			"sid": 488874965398733
