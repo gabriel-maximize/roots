@@ -830,46 +830,60 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 434620373516398,
-							"disabled": true,
+							"sid": 407313119667253,
 							"parameters": {
 								"object-to-create": "caixa_dialogo",
 								"layer": "2",
-								"x": "243.657033",
-								"y": "225.589613",
+								"x": "264.119261",
+								"y": "234.315728",
 								"create-hierarchy": false,
 								"template-name": "\"dialogo\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 350156874179964,
-							"parameters": {
-								"object-to-create": "text_dialogo",
-								"layer": "2",
-								"x": "87.064637",
-								"y": "199.129382",
-								"create-hierarchy": false,
-								"template-name": "\"\""
 							}
 						},
 						{
 							"id": "set-size",
 							"objectClass": "caixa_dialogo",
 							"sid": 643117063969468,
-							"disabled": true,
 							"parameters": {
 								"width": "384.271349  ",
 								"height": "72.358817"
 							}
 						},
 						{
-							"id": "set-z-elevation",
-							"objectClass": "text_dialogo",
-							"sid": 180335648794855,
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 664795817439219,
 							"parameters": {
-								"z": "2"
+								"object-to-create": "text_dialogo",
+								"layer": "2",
+								"x": "96",
+								"y": "209",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_dialogo",
+							"sid": 221982935252479,
+							"parameters": {
+								"text": "\"lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum\""
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "text_dialogo",
+							"sid": 546075247425731,
+							"parameters": {
+								"width": "320"
+							}
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "text_dialogo",
+							"sid": 886921068988396,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
 							}
 						}
 					],
@@ -881,46 +895,14 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 341546921484724,
+							"sid": 956031538295651,
 							"parameters": {
 								"key": 32
 							}
 						}
 					],
 					"actions": [],
-					"sid": 850279925293778
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Teclado",
-							"sid": 731247082555988,
-							"parameters": {
-								"key": 73
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "ajudai",
-							"sid": 339280164254749,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textajuda",
-							"sid": 932653780183969,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						}
-					],
-					"sid": 981731288929048
+					"sid": 894504258406451
 				}
 			],
 			"sid": 488874965398733
