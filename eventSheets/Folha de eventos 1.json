@@ -242,12 +242,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 450227380688828,
+							"sid": 210304722457275,
 							"parameters": {
 								"object-to-create": "hearths",
 								"layer": "1",
-								"x": "30",
-								"y": "30",
+								"x": "20",
+								"y": "20",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -255,9 +255,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "hearths",
-							"sid": 973198906512435,
+							"sid": 648965170138057,
 							"parameters": {
-								"width": "72 * 3"
+								"width": "16* 3"
 							}
 						},
 						{
