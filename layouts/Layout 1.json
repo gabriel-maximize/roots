@@ -5389,8 +5389,8 @@
 						"y": 833.4143117323241,
 						"width": 20.532682054954563,
 						"height": 24.283845122686646,
-						"originX": 0.5625,
-						"originY": 0.5121951219512195,
+						"originX": 0.48717948717948717,
+						"originY": 0.47368421052631576,
 						"color": [
 							1,
 							1,
@@ -5434,7 +5434,7 @@
 					"type": "inimigo_1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "ataque",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5463,31 +5463,33 @@
 								"max-speed": 100,
 								"acceleration": 50000,
 								"deceleration": 50000,
-								"directions": "dir-8",
+								"directions": "dir-4",
 								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": false,
 								"enabled": true
 							}
 						},
-						"8Direction2": {
+						"Sine": {
 							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": false
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 30,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
 							}
 						}
 					},
 					"world": {
-						"x": 178,
-						"y": 835,
-						"width": 32.75467006707764,
-						"height": 31.465116127428914,
+						"x": 179.17464143336764,
+						"y": 836.2517486611913,
+						"width": 22.996356209743553,
+						"height": 17.18187944280052,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

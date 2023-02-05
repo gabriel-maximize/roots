@@ -29,9 +29,9 @@
 			"sid": 193457535431848
 		},
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction2",
-			"sid": 393261788407788
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 311498855981059
 		}
 	],
 	"effectTypes": [],
@@ -40,25 +40,195 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 27,
+						"height": 21,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4710901,
+						"imageSpriteId": 490462,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.19047619047619047,
+								0.5,
+								0.09523809523809523,
+								0.6666666666666666,
+								0.42857142857142855,
+								0.8518518518518519,
+								0.5,
+								0.7407407407407407,
+								0.6666666666666666,
+								0.5,
+								0.9047619047619048,
+								0.1111111111111111,
+								0.8571428571428571,
+								0.1111111111111111,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 275177385807707,
-				"name": "Animation 1",
-				"isLooping": false,
+				"name": "parado",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4325364,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.19047619047619047,
+								0.5,
+								0.09523809523809523,
+								0.6666666666666666,
+								0.42857142857142855,
+								0.8518518518518519,
+								0.5,
+								0.7407407407407407,
+								0.6666666666666666,
+								0.5,
+								0.9047619047619048,
+								0.1111111111111111,
+								0.8571428571428571,
+								0.1111111111111111,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7074505,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.19047619047619047,
+								0.5,
+								0.09523809523809523,
+								0.6666666666666666,
+								0.42857142857142855,
+								0.8518518518518519,
+								0.5,
+								0.8518518518518519,
+								0.8095238095238095,
+								0.5,
+								0.8095238095238095,
+								0.1111111111111111,
+								0.8571428571428571,
+								0.1111111111111111,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 492529021950656,
+				"name": "andando-direita",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3496438,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.19047619047619047,
+								0.5,
+								0.09523809523809523,
+								0.6666666666666666,
+								0.42857142857142855,
+								0.8518518518518519,
+								0.5,
+								0.8518518518518519,
+								0.8095238095238095,
+								0.5,
+								0.8095238095238095,
+								0.1111111111111111,
+								0.8571428571428571,
+								0.1111111111111111,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7532477,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.19047619047619047,
+								0.5,
+								0.047619047619047616,
+								0.7407407407407407,
+								0.3333333333333333,
+								0.8148148148148148,
+								0.5,
+								0.8148148148148148,
+								0.7619047619047619,
+								0.5,
+								0.7142857142857143,
+								0.2222222222222222,
+								0.7142857142857143,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 250339601839419,
+				"name": "ataque",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
 			}
 		],
 		"subfolders": []

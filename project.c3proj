@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
 			"author": "Scirra",
