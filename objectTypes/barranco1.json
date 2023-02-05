@@ -1,0 +1,63 @@
+{
+	"name": "barranco1",
+	"plugin-id": "Sprite",
+	"sid": 803709090579406,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "RestritoAoLayout",
+			"sid": 211309294695640
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 84,
+						"height": 52,
+						"originX": 0.5357142857142857,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4856264,
+						"collisionPoly": {
+							"points": [
+								0.011904761904761904,
+								0.019230769230769232,
+								0.5357142857142857,
+								0.019230769230769232,
+								0.9404761904761905,
+								0.21153846153846154,
+								0.9642857142857143,
+								0.5,
+								0.9880952380952381,
+								0.8653846153846154,
+								0.5357142857142857,
+								0.9807692307692307,
+								0.011904761904761904,
+								0.9807692307692307,
+								0.011904761904761904,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 847181765382969,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
