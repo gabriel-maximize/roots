@@ -9,14 +9,14 @@
 		{
 			"type": "plugin",
 			"id": "Audio",
-			"name": "Audio",
+			"name": "Áudio",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -30,70 +30,70 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Plano de Fundo em Blocos",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Tilemap",
+			"name": "Mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Direction",
+			"name": "8 Direções",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "LOS",
-			"name": "Line of sight",
+			"name": "Campo de visão",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Sine",
+			"name": "Senóide",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "TileMovement",
-			"name": "Tile movement",
+			"name": "Movimento em grid",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "bound",
-			"name": "Bound to layout",
+			"name": "Restrito ao layout",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Centrar em",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -130,7 +130,13 @@
 			"Caldeira",
 			"barranco1",
 			"Sprite8",
-			"box_dialogo"
+			"box_dialogo",
+			"Rio",
+			"Pont",
+			"PonteEsquerda",
+			"PonteCentro",
+			"Sprite9",
+			"arbusto"
 		],
 		"subfolders": []
 	},

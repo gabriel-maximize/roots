@@ -1,0 +1,49 @@
+{
+	"name": "PonteEsquerda",
+	"plugin-id": "Sprite",
+	"sid": 851672200575381,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 38,
+						"originX": 6.678571428571429,
+						"originY": 3.6315789473684212,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 243670,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9642857142857143,
+								0,
+								0.9642857142857143,
+								0.2631578947368421,
+								0.9642857142857143,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 398244835855437,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
