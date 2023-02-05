@@ -283,6 +283,15 @@
 							"parameters": {
 								"key": 38
 							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "personagem",
+							"sid": 727489713912143,
+							"parameters": {
+								"instance-variable": "ataque"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -317,6 +326,15 @@
 							"parameters": {
 								"key": 40
 							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "personagem",
+							"sid": 674533885591338,
+							"parameters": {
+								"instance-variable": "ataque"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -351,6 +369,15 @@
 							"parameters": {
 								"key": 37
 							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "personagem",
+							"sid": 986547432876863,
+							"parameters": {
+								"instance-variable": "ataque"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -385,6 +412,15 @@
 							"parameters": {
 								"key": 39
 							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "personagem",
+							"sid": 256894058006602,
+							"parameters": {
+								"instance-variable": "ataque"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -555,18 +591,45 @@
 							"parameters": {
 								"width": "Self.Width-16"
 							}
+						}
+					],
+					"sid": 674539552939824
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "inimigo_1",
+							"sid": 207182250255631,
+							"parameters": {
+								"object": "hit_box"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "inimigo_1",
+							"sid": 592342074373429,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
 						},
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "inimigo_1",
-							"sid": 455697108963800,
+							"sid": 385575603322806,
 							"parameters": {
 								"instance-variable": "vida",
 								"value": "1"
 							}
 						}
 					],
-					"sid": 674539552939824
+					"sid": 135852900349713
 				},
 				{
 					"eventType": "block",
@@ -587,6 +650,17 @@
 							"id": "destroy",
 							"objectClass": "inimigo_1",
 							"sid": 260363198838980
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "inimigo_1",
+							"sid": 550106936796299,
+							"parameters": {
+								"object": "vida",
+								"layer": "1",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
 						}
 					],
 					"sid": 572718212159147
@@ -776,6 +850,7 @@
 					],
 					"actions": [],
 					"sid": 655255003303298,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -793,6 +868,7 @@
 							],
 							"actions": [],
 							"sid": 348240983549274,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -818,7 +894,8 @@
 											}
 										}
 									],
-									"sid": 182742028685522
+									"sid": 182742028685522,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -844,7 +921,8 @@
 											}
 										}
 									],
-									"sid": 240606736669761
+									"sid": 240606736669761,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -870,7 +948,8 @@
 											}
 										}
 									],
-									"sid": 639383738332209
+									"sid": 639383738332209,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -896,7 +975,8 @@
 											}
 										}
 									],
-									"sid": 220990509612054
+									"sid": 220990509612054,
+									"disabled": true
 								}
 							]
 						}
@@ -908,7 +988,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 893764617228994,
+							"sid": 906811046235461,
 							"parameters": {
 								"key": 88
 							}
@@ -916,24 +996,61 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "set-boolean-instvar",
 							"objectClass": "personagem",
-							"sid": 880349265206630,
+							"sid": 521076089556195,
 							"parameters": {
-								"animation": "\"ataque\"",
-								"from": "beginning"
+								"instance-variable": "ataque",
+								"value": "true"
 							}
 						}
 					],
-					"sid": 389249886403833,
+					"sid": 357823253443274
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "personagem",
+							"sid": 914331163448240,
+							"parameters": {
+								"instance-variable": "ataque"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 621055558765545,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 428557692290850
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "hit_box",
+									"sid": 350345567259599,
+									"parameters": {
+										"object": "personagem",
+										"image-point-optional": "1"
+									}
+								}
+							],
+							"sid": 551859023222694
+						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "is-animation-playing",
 									"objectClass": "personagem",
-									"sid": 196088511848402,
+									"sid": 963692080066719,
 									"parameters": {
 										"animation": "\"ataque\""
 									},
@@ -944,30 +1061,70 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "personagem",
-									"sid": 230909424387000,
+									"sid": 200463125350059,
 									"parameters": {
 										"instance-variable": "ataque",
 										"value": "true"
 									}
 								}
 							],
-							"sid": 116098502343751
+							"sid": 275800402720177
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
+									"id": "on-animation-finished",
 									"objectClass": "personagem",
-									"sid": 972633268117449,
+									"sid": 909796338695161,
 									"parameters": {
-										"instance-variable": "ataque"
-									},
-									"isInverted": true
+										"animation": "\"ataque\""
+									}
 								}
 							],
-							"actions": [],
-							"sid": 976319356359334
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "personagem",
+									"sid": 228519897799693,
+									"parameters": {
+										"instance-variable": "ataque",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "personagem",
+									"sid": 319215735092402,
+									"parameters": {
+										"animation": "\"Descansando-frente\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 247333339852619
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 961655505273316
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "personagem",
+									"sid": 976618231462899,
+									"parameters": {
+										"animation": "\"ataque\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 817422070979022
 						}
 					]
 				},
@@ -975,26 +1132,27 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-animation-finished",
+							"id": "is-boolean-instance-variable-set",
 							"objectClass": "personagem",
-							"sid": 986295988203424,
+							"sid": 875020629098860,
 							"parameters": {
-								"animation": "\"ataque\""
-							}
+								"instance-variable": "ataque"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "personagem",
-							"sid": 436039039358855,
+							"id": "set-position",
+							"objectClass": "hit_box",
+							"sid": 852215645550631,
 							"parameters": {
-								"instance-variable": "ataque",
-								"value": "false"
+								"x": "-100",
+								"y": "-100"
 							}
 						}
 					],
-					"sid": 978469598481828
+					"sid": 262957758541381
 				}
 			],
 			"sid": 299951117365673

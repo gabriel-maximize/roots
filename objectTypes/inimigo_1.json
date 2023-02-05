@@ -32,6 +32,11 @@
 			"behaviorId": "Sin",
 			"name": "Sine",
 			"sid": 311498855981059
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 836784388431266
 		}
 	],
 	"effectTypes": [],
