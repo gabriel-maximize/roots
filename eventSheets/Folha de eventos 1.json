@@ -670,14 +670,25 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "personagem",
-							"sid": 810280480850149,
+							"objectClass": "boss_1",
+							"sid": 140516924113468,
 							"parameters": {
-								"object": "boss_1"
+								"object": "hit_box"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "boss_1",
+							"sid": 332344208609545,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "boss_1",
@@ -688,8 +699,7 @@
 							}
 						}
 					],
-					"sid": 955237073907581,
-					"disabled": true
+					"sid": 955237073907581
 				},
 				{
 					"eventType": "block",
@@ -1352,9 +1362,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "text_dialogo",
-							"sid": 221982935252479,
+							"sid": 172299806403510,
 							"parameters": {
-								"text": "\"lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum\""
+								"text": "\"Olá garotinha, haha, você parece meio perdida\""
 							}
 						},
 						{
@@ -1368,9 +1378,9 @@
 						{
 							"id": "set-font-color",
 							"objectClass": "text_dialogo",
-							"sid": 886921068988396,
+							"sid": 948677096492254,
 							"parameters": {
-								"color": "rgbEx(255, 255, 255)"
+								"color": "rgbEx(255, 0, 0)"
 							}
 						},
 						{
@@ -1390,14 +1400,38 @@
 							}
 						},
 						{
-							"id": "destroy",
-							"objectClass": "caixa_dialogo",
-							"sid": 989278900109793
+							"id": "set-font-color",
+							"objectClass": "text_dialogo",
+							"sid": 439571789081316,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_dialogo",
+							"sid": 777954856108906,
+							"parameters": {
+								"text": "\"Quem é você?\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 717798944720452,
+							"parameters": {
+								"seconds": "2.0"
+							}
 						},
 						{
 							"id": "destroy",
 							"objectClass": "text_dialogo",
-							"sid": 436725285720162
+							"sid": 285128041599538
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_dialogo",
+							"sid": 989278900109793
 						}
 					],
 					"sid": 995949222206045
