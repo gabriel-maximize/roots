@@ -242,10 +242,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 646292782035045,
+							"sid": 210304722457275,
 							"parameters": {
 								"object-to-create": "hearths",
-								"layer": "2",
+								"layer": "1",
 								"x": "20",
 								"y": "20",
 								"create-hierarchy": false,
