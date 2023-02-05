@@ -9,6 +9,11 @@
 			"behaviorId": "solid",
 			"name": "Sólido",
 			"sid": 589249481946305
+		},
+		{
+			"behaviorId": "bound",
+			"name": "RestritoAoLayout",
+			"sid": 407597998059125
 		}
 	],
 	"effectTypes": [],
