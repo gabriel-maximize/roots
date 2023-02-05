@@ -1,0 +1,37 @@
+{
+	"name": "Arbusto_escuro",
+	"plugin-id": "Sprite",
+	"sid": 896579457811455,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 749116,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 239131187182565,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

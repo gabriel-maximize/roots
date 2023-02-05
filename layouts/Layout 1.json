@@ -140,6 +140,499 @@
 						"angle": 4.693915794965758,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 75,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 607.7029934201282,
+						"y": 515.1828306640136,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 76,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 565.4441621034487,
+						"y": 514.5407972765668,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 77,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 389.9942275397906,
+						"y": 514.3743441761177,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 78,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 461.72846819950087,
+						"y": 512.9669788082988,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 489.42705674805427,
+						"y": 513.2761059948473,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 80,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 235.58659065101529,
+						"y": 415.7707113840901,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 81,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 198.10333256186377,
+						"y": 459.2295613425266,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 82,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 236.12982627549576,
+						"y": 237.58942655450022,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 236.67306189997623,
+						"y": 250.08384591755072,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 84,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 198.1033325618638,
+						"y": 239.21913342794159,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 85,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 198.64656818634427,
+						"y": 250.6270815420312,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 86,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 235.58659065101529,
+						"y": 404.90599889448094,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 247.53777438958537,
+						"y": 409.79511951480504,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 88,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 638.1241883910338,
+						"y": 417.94365388201186,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 89,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 614.7650565383742,
+						"y": 417.40041825753144,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 90,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 613.6785852894134,
+						"y": 461.9457394649289,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arbusto_escuro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 91,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 636.4944815175925,
+						"y": 462.48897508940934,
+						"width": 25,
+						"height": 23,
+						"originX": 5.92,
+						"originY": 10.608695652173912,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 711271439188096,
@@ -1049,8 +1542,8 @@
 						}
 					},
 					"world": {
-						"x": 778.7332405889318,
-						"y": 474.5086283279932,
+						"x": 760.7699937321158,
+						"y": 447.8203758550095,
 						"width": 70.6565653143947,
 						"height": 65.00404008924312,
 						"originX": 5.14,
@@ -1229,8 +1722,8 @@
 						}
 					},
 					"world": {
-						"x": 762.7921227532512,
-						"y": 334.96108496134894,
+						"x": 756.1711807689132,
+						"y": 329.32102327098704,
 						"width": 70.6565653143947,
 						"height": 65.00404008924312,
 						"originX": 5.14,
