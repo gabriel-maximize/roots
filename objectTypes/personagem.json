@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 123782076765734,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ataque",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 910859581082461
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "TileMovement",

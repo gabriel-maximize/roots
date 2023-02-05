@@ -803,6 +803,39 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 893764617228994,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "personagem",
+							"sid": 743685511109018,
+							"parameters": {
+								"animation": "\"ataque\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 439000922561681,
+							"parameters": {
+								"animation": "\"ataque\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 389249886403833
 				}
 			],
 			"sid": 299951117365673

@@ -3305,7 +3305,9 @@
 						"live-preview": false
 					},
 					"uid": 4,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ataque": false
+					},
 					"behaviors": {
 						"MovimentoEmGrid": {
 							"properties": {
@@ -3341,7 +3343,7 @@
 								"max-speed": 200,
 								"acceleration": 50000,
 								"deceleration": 50000,
-								"directions": "dir-8",
+								"directions": "dir-4",
 								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": true,
