@@ -688,7 +688,8 @@
 							}
 						}
 					],
-					"sid": 955237073907581
+					"sid": 955237073907581,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -752,9 +753,42 @@
 									"parameters": {
 										"control": "right"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "boss_1",
+									"sid": 677686292643099,
+									"parameters": {
+										"animation": "\"move\"",
+										"from": "beginning"
+									}
 								}
 							],
-							"sid": 878433806727969
+							"sid": 878433806727969,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-mirrored",
+											"objectClass": "boss_1",
+											"sid": 919852251460672,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "boss_1",
+											"sid": 751025259667092,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 901571677976102
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -778,9 +812,41 @@
 									"parameters": {
 										"control": "left"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "boss_1",
+									"sid": 446970843358653,
+									"parameters": {
+										"animation": "\"move\"",
+										"from": "beginning"
+									}
 								}
 							],
-							"sid": 958957464930752
+							"sid": 958957464930752,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-mirrored",
+											"objectClass": "boss_1",
+											"sid": 431476665867159
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "boss_1",
+											"sid": 680538069934725,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 878618587179135
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -803,6 +869,15 @@
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "down"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "boss_1",
+									"sid": 427793528744734,
+									"parameters": {
+										"animation": "\"move\"",
+										"from": "beginning"
 									}
 								}
 							],
@@ -829,6 +904,15 @@
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "up"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "boss_1",
+									"sid": 123628614100471,
+									"parameters": {
+										"animation": "\"move\"",
+										"from": "beginning"
 									}
 								}
 							],
@@ -1124,7 +1208,60 @@
 									}
 								}
 							],
-							"sid": 817422070979022
+							"sid": 817422070979022,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 546833009527381,
+											"parameters": {
+												"first-value": "personagem.8Direction.VectorX",
+												"comparison": 0,
+												"second-value": "-200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "personagem",
+											"sid": 488266007772514,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "personagem",
+											"sid": 571816226810111,
+											"parameters": {
+												"animation": "\"ataque\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 683090251187744,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "personagem",
+											"sid": 277477024785787,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 183354326417945
+								}
+							]
 						}
 					]
 				},
