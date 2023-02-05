@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 365606108828174,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "vida",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 851883794089862
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",

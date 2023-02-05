@@ -12,26 +12,6 @@
 			"sid": 508718366398820
 		},
 		{
-			"eventType": "variable",
-			"name": "vida_inimigo__1",
-			"type": "number",
-			"initialValue": "2",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 731604038100979
-		},
-		{
-			"eventType": "variable",
-			"name": "vida_boss__1",
-			"type": "number",
-			"initialValue": "5",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 785870329326840
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "audio",
@@ -262,7 +242,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 710532048668458,
+							"sid": 450227380688828,
 							"parameters": {
 								"object-to-create": "hearths",
 								"layer": "1",
@@ -278,6 +258,32 @@
 							"sid": 973198906512435,
 							"parameters": {
 								"width": "72 * 3"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 979003372288582,
+							"parameters": {
+								"object-to-create": "inimigo_1",
+								"layer": "0",
+								"x": "1748",
+								"y": "555",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 890312599551808,
+							"parameters": {
+								"object-to-create": "inimigo_1",
+								"layer": "0",
+								"x": "1971",
+								"y": "401",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						}
 					],
@@ -479,11 +485,11 @@
 							}
 						},
 						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 624295699040076,
+							"id": "subtract-from-instvar",
+							"objectClass": "inimigo_1",
+							"sid": 455697108963800,
 							"parameters": {
-								"variable": "vida_inimigo__1",
+								"instance-variable": "vida",
 								"value": "1"
 							}
 						}
@@ -494,11 +500,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 110049605615263,
+							"id": "compare-instance-variable",
+							"objectClass": "inimigo_1",
+							"sid": 233708167130533,
 							"parameters": {
-								"variable": "vida_inimigo__1",
+								"instance-variable": "vida",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -527,11 +533,11 @@
 					],
 					"actions": [
 						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 939387147099529,
+							"id": "subtract-from-instvar",
+							"objectClass": "boss_1",
+							"sid": 627159569166154,
 							"parameters": {
-								"variable": "vida_boss__1",
+								"instance-variable": "vida",
 								"value": "1"
 							}
 						}
@@ -542,11 +548,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 626198381341339,
+							"id": "compare-instance-variable",
+							"objectClass": "boss_1",
+							"sid": 287816255559285,
 							"parameters": {
-								"variable": "vida_boss__1",
+								"instance-variable": "vida",
 								"comparison": 0,
 								"value": "0"
 							}
