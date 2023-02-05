@@ -4138,8 +4138,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 393.9888365361427,
-						"y": 962.9640088421679,
+						"x": 394.0372569170823,
+						"y": 951.9761690637682,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -4211,7 +4211,7 @@
 						"x": 807.7322083331393,
 						"y": 375.309684714114,
 						"width": 18.08297368424706,
-						"height": 22.23316436587754,
+						"height": 22.233164365877542,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5264,6 +5264,35 @@
 					}
 				},
 				{
+					"type": "box_dialogo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 220,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 352.6992731460592,
+						"y": 977.7227000461721,
+						"width": 139.97586879658186,
+						"height": 137.10833630956984,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Sprite6",
 					"properties": {
 						"initially-visible": true,
@@ -5424,7 +5453,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 500,
+								"range": 50,
 								"cone-of-view": 90,
 								"use-collision-cells": true
 							}

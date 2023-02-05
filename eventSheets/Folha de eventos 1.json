@@ -860,9 +860,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "personagem",
-							"sid": 933189360047297,
+							"sid": 234050054771140,
 							"parameters": {
-								"object": "npc__1"
+								"object": "box_dialogo"
 							}
 						}
 					],
@@ -870,11 +870,11 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 407313119667253,
+							"sid": 752992131524507,
 							"parameters": {
 								"object-to-create": "caixa_dialogo",
 								"layer": "2",
-								"x": "264.119261",
+								"x": "240",
 								"y": "234.315728",
 								"create-hierarchy": false,
 								"template-name": "\"dialogo\""
@@ -883,21 +883,21 @@
 						{
 							"id": "set-size",
 							"objectClass": "caixa_dialogo",
-							"sid": 643117063969468,
+							"sid": 522311944074984,
 							"parameters": {
-								"width": "384.271349  ",
-								"height": "72.358817"
+								"width": "420",
+								"height": "72"
 							}
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 664795817439219,
+							"sid": 521296677284281,
 							"parameters": {
 								"object-to-create": "text_dialogo",
 								"layer": "2",
-								"x": "96",
-								"y": "209",
+								"x": "50",
+								"y": "210",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -913,9 +913,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "text_dialogo",
-							"sid": 546075247425731,
+							"sid": 530459152885580,
 							"parameters": {
-								"width": "320"
+								"width": "380"
 							}
 						},
 						{
@@ -925,6 +925,32 @@
 							"parameters": {
 								"color": "rgbEx(255, 255, 255)"
 							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "text_dialogo",
+							"sid": 524238953198623,
+							"parameters": {
+								"size-pt": "8"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 178472448880377,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_dialogo",
+							"sid": 989278900109793
+						},
+						{
+							"id": "destroy",
+							"objectClass": "text_dialogo",
+							"sid": 436725285720162
 						}
 					],
 					"sid": 995949222206045
