@@ -17,6 +17,21 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 264216889720783
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 358171305073576
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 193457535431848
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction2",
+			"sid": 393261788407788
 		}
 	],
 	"effectTypes": [],

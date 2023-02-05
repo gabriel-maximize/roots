@@ -573,7 +573,8 @@
 						{
 							"id": "has-los-to-object",
 							"objectClass": "boss_1",
-							"sid": 405732063201685,
+							"sid": 712199362747048,
+							"disabled": true,
 							"behaviorType": "LineOfSight",
 							"parameters": {
 								"object": "personagem",
@@ -608,7 +609,8 @@
 									}
 								}
 							],
-							"sid": 878433806727969
+							"sid": 878433806727969,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -634,7 +636,8 @@
 									}
 								}
 							],
-							"sid": 958957464930752
+							"sid": 958957464930752,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -660,7 +663,8 @@
 									}
 								}
 							],
-							"sid": 441049741964588
+							"sid": 441049741964588,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -686,7 +690,148 @@
 									}
 								}
 							],
-							"sid": 998751725556364
+							"sid": 998751725556364,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 413735215493447,
+							"parameters": {
+								"object": "inimigo_1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 655255003303298,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "inimigo_1",
+									"sid": 931872530622676,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "personagem",
+										"image-point": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 348240983549274,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-x",
+											"objectClass": "inimigo_1",
+											"sid": 211727443960522,
+											"parameters": {
+												"comparison": 2,
+												"x-co-ordinate": "personagem.X"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "inimigo_1",
+											"sid": 555505232656483,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 182742028685522
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-x",
+											"objectClass": "inimigo_1",
+											"sid": 687771302996821,
+											"parameters": {
+												"comparison": 4,
+												"x-co-ordinate": "personagem.X"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "inimigo_1",
+											"sid": 403678593995653,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 240606736669761
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-y",
+											"objectClass": "inimigo_1",
+											"sid": 270817892737406,
+											"parameters": {
+												"comparison": 2,
+												"y-co-ordinate": "personagem.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "inimigo_1",
+											"sid": 867574999360166,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 639383738332209
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-y",
+											"objectClass": "inimigo_1",
+											"sid": 436723646361343,
+											"parameters": {
+												"comparison": 4,
+												"y-co-ordinate": "personagem.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "inimigo_1",
+											"sid": 390282355159352,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 220990509612054
+								}
+							]
 						}
 					]
 				}

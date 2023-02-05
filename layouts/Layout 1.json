@@ -112,6 +112,38 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 500,
+								"cone-of-view": 90,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"8Direction2": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -237,35 +269,6 @@
 						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "npc__1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1937,
-						"y": 212,
-						"width": 43.74197941537863,
-						"height": 64.8029324672276,
-						"originX": 115.24074074074075,
-						"originY": 17.151046047098404,
 						"color": [
 							1,
 							1,
@@ -691,11 +694,43 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 500,
+								"cone-of-view": 90,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"8Direction2": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 1971,
-						"y": 401,
+						"x": 2091,
+						"y": 395,
 						"width": 127,
 						"height": 122,
 						"originX": 0.5,
