@@ -1,0 +1,57 @@
+{
+	"name": "caixa_dialogo",
+	"plugin-id": "Sprite",
+	"sid": 718586529361224,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 172,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5235182,
+						"collisionPoly": {
+							"points": [
+								0.005813953488372093,
+								0.022222222222222223,
+								0.5,
+								0.022222222222222223,
+								0.9941860465116279,
+								0.022222222222222223,
+								0.9941860465116279,
+								0.5,
+								0.9941860465116279,
+								0.9777777777777777,
+								0.5,
+								0.9777777777777777,
+								0.005813953488372093,
+								0.9777777777777777,
+								0.005813953488372093,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 680016892178302,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

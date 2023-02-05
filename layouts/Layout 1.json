@@ -490,7 +490,7 @@
 			"global": false
 		},
 		{
-			"name": "vidas",
+			"name": "hud",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [

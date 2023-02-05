@@ -819,56 +819,76 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "area_dialogo",
-							"sid": 334837002748277,
+							"objectClass": "personagem",
+							"sid": 933189360047297,
 							"parameters": {
-								"object": "personagem"
+								"object": "npc__1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-visible",
-							"objectClass": "Sprite4",
-							"sid": 153429707356026,
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 434620373516398,
+							"disabled": true,
 							"parameters": {
-								"visibility": "visible"
+								"object-to-create": "caixa_dialogo",
+								"layer": "2",
+								"x": "243.657033",
+								"y": "225.589613",
+								"create-hierarchy": false,
+								"template-name": "\"dialogo\""
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "Sprite2",
-							"sid": 163786241959757,
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 350156874179964,
 							"parameters": {
-								"visibility": "visible"
+								"object-to-create": "text_dialogo",
+								"layer": "2",
+								"x": "87.064637",
+								"y": "199.129382",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "Sprite5",
-							"sid": 905220946543485,
+							"id": "set-size",
+							"objectClass": "caixa_dialogo",
+							"sid": 643117063969468,
+							"disabled": true,
 							"parameters": {
-								"visibility": "visible"
+								"width": "384.271349  ",
+								"height": "72.358817"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "text_dialogo1",
-							"sid": 501366006770291,
+							"id": "set-z-elevation",
+							"objectClass": "text_dialogo",
+							"sid": 180335648794855,
 							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textname",
-							"sid": 404856147388168,
-							"parameters": {
-								"visibility": "visible"
+								"z": "2"
 							}
 						}
 					],
 					"sid": 995949222206045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 341546921484724,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 850279925293778
 				},
 				{
 					"eventType": "block",
