@@ -189,7 +189,7 @@
 						},
 						"8Direction": {
 							"properties": {
-								"max-speed": 300,
+								"max-speed": 200,
 								"acceleration": 50000,
 								"deceleration": 50000,
 								"directions": "dir-8",
@@ -230,8 +230,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2802.6838570283303,
-						"y": 560.7494629862076,
+						"x": 2845.7044167948725,
+						"y": 541.5745849188346,
 						"width": 21.107031274395226,
 						"height": 31.000952184267987,
 						"originX": 115.24074074074075,
@@ -276,7 +276,7 @@
 						},
 						"8Direction": {
 							"properties": {
-								"max-speed": 200,
+								"max-speed": 100,
 								"acceleration": 50000,
 								"deceleration": 50000,
 								"directions": "dir-8",
@@ -304,64 +304,6 @@
 						"y": 80.79863989584817,
 						"width": 32.75467006707764,
 						"height": 31.465116127428914,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "boss_1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"instanceVariables": {
-						"vida": 5
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 3000,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 50000,
-								"deceleration": 50000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 299.6454387227511,
-						"y": 193.836769544708,
-						"width": 32,
-						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

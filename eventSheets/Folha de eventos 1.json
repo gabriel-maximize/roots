@@ -242,10 +242,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 210304722457275,
+							"sid": 951078859624577,
 							"parameters": {
 								"object-to-create": "hearths",
-								"layer": "1",
+								"layer": "2",
 								"x": "20",
 								"y": "20",
 								"create-hierarchy": false,
@@ -258,32 +258,6 @@
 							"sid": 648965170138057,
 							"parameters": {
 								"width": "16* 3"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 979003372288582,
-							"parameters": {
-								"object-to-create": "inimigo_1",
-								"layer": "0",
-								"x": "1748",
-								"y": "555",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 890312599551808,
-							"parameters": {
-								"object-to-create": "inimigo_1",
-								"layer": "0",
-								"x": "1971",
-								"y": "401",
-								"create-hierarchy": false,
-								"template-name": "\"\""
 							}
 						}
 					],
@@ -574,7 +548,6 @@
 							"id": "has-los-to-object",
 							"objectClass": "boss_1",
 							"sid": 712199362747048,
-							"disabled": true,
 							"behaviorType": "LineOfSight",
 							"parameters": {
 								"object": "personagem",
@@ -609,8 +582,7 @@
 									}
 								}
 							],
-							"sid": 878433806727969,
-							"disabled": true
+							"sid": 878433806727969
 						},
 						{
 							"eventType": "block",
@@ -636,8 +608,7 @@
 									}
 								}
 							],
-							"sid": 958957464930752,
-							"disabled": true
+							"sid": 958957464930752
 						},
 						{
 							"eventType": "block",
@@ -663,8 +634,7 @@
 									}
 								}
 							],
-							"sid": 441049741964588,
-							"disabled": true
+							"sid": 441049741964588
 						},
 						{
 							"eventType": "block",
@@ -690,8 +660,7 @@
 									}
 								}
 							],
-							"sid": 998751725556364,
-							"disabled": true
+							"sid": 998751725556364
 						}
 					]
 				},
