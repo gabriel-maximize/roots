@@ -111,6 +111,35 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "ponte",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 646.0048873005198,
+						"y": 68.8098954490188,
+						"width": 34,
+						"height": 36,
+						"originX": 5.4411764705882355,
+						"originY": 5.166666666666667,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.693915794965758,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 711271439188096,

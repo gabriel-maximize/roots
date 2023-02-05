@@ -1,0 +1,37 @@
+{
+	"name": "ponte",
+	"plugin-id": "Sprite",
+	"sid": 540956758572541,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 36,
+						"originX": 5.4411764705882355,
+						"originY": 5.166666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1633024,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 768481420869956,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
