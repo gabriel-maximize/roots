@@ -216,9 +216,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "hearths",
-							"sid": 696174370544927,
+							"sid": 181242639810825,
 							"parameters": {
-								"width": "Self.Width+72"
+								"width": "Self.Width+16"
 							}
 						},
 						{
@@ -242,10 +242,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 210304722457275,
+							"sid": 646292782035045,
 							"parameters": {
 								"object-to-create": "hearths",
-								"layer": "1",
+								"layer": "2",
 								"x": "20",
 								"y": "20",
 								"create-hierarchy": false,
@@ -479,9 +479,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "hearths",
-							"sid": 215278613506040,
+							"sid": 370353581319543,
 							"parameters": {
-								"width": "Self.Width-72"
+								"width": "Self.Width-16"
 							}
 						},
 						{

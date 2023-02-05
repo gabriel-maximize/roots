@@ -7,76 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "inimigo_1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 6,
-					"instanceVariables": {
-						"vida": 2
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 90,
-								"use-collision-cells": true
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 50000,
-								"deceleration": 50000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"8Direction2": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"allow-sliding": false,
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 304.83042029830335,
-						"y": 80.79863989584817,
-						"width": 32.75467006707764,
-						"height": 31.465116127428914,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "vida",
 					"properties": {
 						"initially-visible": true,
@@ -93,93 +23,6 @@
 						"y": 72.26239788712886,
 						"width": 16,
 						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "npc__1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 13,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2802.6838570283303,
-						"y": 560.7494629862076,
-						"width": 21.107031274395226,
-						"height": 31.000952184267987,
-						"originX": 115.24074074074075,
-						"originY": 17.151046047098404,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "boss_1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"instanceVariables": {
-						"vida": 5
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 3000,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 300,
-								"acceleration": 50000,
-								"deceleration": 50000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 299.6454387227511,
-						"y": 193.836769544708,
-						"width": 32,
-						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -268,7 +111,41 @@
 						],
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 711271439188096,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": true,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "objetos",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "personagem",
 					"properties": {
@@ -339,9 +216,166 @@
 						"angle": 0,
 						"zElevation": 1
 					}
+				},
+				{
+					"type": "npc__1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2802.6838570283303,
+						"y": 560.7494629862076,
+						"width": 21.107031274395226,
+						"height": 31.000952184267987,
+						"originX": 115.24074074074075,
+						"originY": 17.151046047098404,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "inimigo_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"instanceVariables": {
+						"vida": 2
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 500,
+								"cone-of-view": 90,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"8Direction2": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 304.83042029830335,
+						"y": 80.79863989584817,
+						"width": 32.75467006707764,
+						"height": 31.465116127428914,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "boss_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {
+						"vida": 5
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 3000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 299.6454387227511,
+						"y": 193.836769544708,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
 				}
 			],
-			"sid": 711271439188096,
+			"sid": 969662826280176,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -352,21 +386,21 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
-			"forceOwnTexture": true,
+			"forceOwnTexture": false,
 			"renderingMode": "3d",
 			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"zElevation": 0,
+			"zElevation": 1,
 			"global": false
 		},
 		{
@@ -635,76 +669,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "inimigo_1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 21,
-					"instanceVariables": {
-						"vida": 2
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 90,
-								"use-collision-cells": true
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 50000,
-								"deceleration": 50000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"8Direction2": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"allow-sliding": false,
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 416.7959074408309,
-						"y": 128.1376154599057,
-						"width": 32.21286272149868,
-						"height": 30.94463977970739,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 338899597638556,
@@ -732,7 +696,7 @@
 			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
-			"zElevation": 0,
+			"zElevation": 2,
 			"global": false
 		}
 	],
