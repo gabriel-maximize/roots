@@ -242,7 +242,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 951078859624577,
+							"sid": 768430527521424,
 							"parameters": {
 								"object-to-create": "hearths",
 								"layer": "2",
@@ -814,28 +814,35 @@
 							"parameters": {
 								"key": 88
 							}
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "personagem",
-							"sid": 743685511109018,
-							"parameters": {
-								"animation": "\"ataque\""
-							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 389249886403833,
+					"children": [
 						{
-							"id": "set-animation",
-							"objectClass": "personagem",
-							"sid": 439000922561681,
-							"parameters": {
-								"animation": "\"ataque\"",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-enabled",
+									"objectClass": "personagem",
+									"sid": 978546221987682,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "personagem",
+									"sid": 109789844062534,
+									"parameters": {
+										"animation": "\"ataque-direita\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 436522659303295
 						}
-					],
-					"sid": 389249886403833
+					]
 				}
 			],
 			"sid": 299951117365673
