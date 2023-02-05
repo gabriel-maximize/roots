@@ -566,6 +566,129 @@
 						}
 					],
 					"sid": 721408756077550
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "boss_1",
+							"sid": 405732063201685,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "personagem",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 641263817040266,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "boss_1",
+									"sid": 107806174762617,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "personagem.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "boss_1",
+									"sid": 922106737620341,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 878433806727969
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "boss_1",
+									"sid": 180981700107971,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "personagem.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "boss_1",
+									"sid": 375871635593993,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 958957464930752
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "boss_1",
+									"sid": 871562861686576,
+									"parameters": {
+										"comparison": 2,
+										"y-co-ordinate": "personagem.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "boss_1",
+									"sid": 910446487064329,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 441049741964588
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "boss_1",
+									"sid": 915669863857719,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "personagem.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "boss_1",
+									"sid": 905283163672346,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 998751725556364
+						}
+					]
 				}
 			],
 			"sid": 299951117365673

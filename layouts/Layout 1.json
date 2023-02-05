@@ -208,6 +208,26 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 3000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
