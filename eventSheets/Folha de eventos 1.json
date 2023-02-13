@@ -259,6 +259,23 @@
 							"parameters": {
 								"width": "16* 3"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Áudio",
+							"sid": 961781711718463
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 643026193575047,
+							"parameters": {
+								"audio-file": "trilha-sonora",
+								"loop": "looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 362771687898285
