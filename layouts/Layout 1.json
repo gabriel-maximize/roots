@@ -2879,6 +2879,172 @@
 						"angle": 0,
 						"zElevation": 1
 					}
+				},
+				{
+					"type": "hitbox__inimigo1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 290,
+					"instanceVariables": {},
+					"behaviors": {},
+					"template": {
+						"mode": "template",
+						"templateName": "init",
+						"sourceTemplateName": "",
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"initial-animation",
+												true
+											],
+											[
+												"initial-frame",
+												true
+											],
+											[
+												"enable-collisions",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": []
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
+					"world": {
+						"x": -79.09569549560547,
+						"y": 939.210693359375,
+						"width": 2.9999999999999996,
+						"height": 2.9999999999999996,
+						"originX": 0.8297872340425532,
+						"originY": 1.0212765957446808,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
 				}
 			],
 			"sid": 711271439188096,
@@ -6799,19 +6965,6 @@
 						"ataque": false
 					},
 					"behaviors": {
-						"MovimentoEmGrid": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 500,
-								"speed-y": 500,
-								"enabled": false,
-								"default-controls": true,
-								"isometric": false
-							}
-						},
 						"CentrarEm": {
 							"properties": {
 								"enabled": true
@@ -6898,7 +7051,8 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"vida": 2
+						"vida": 2,
+						"ataque": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -6948,10 +7102,10 @@
 					"world": {
 						"x": 427,
 						"y": 967,
-						"width": 22.996356209743553,
+						"width": 22.144639313086387,
 						"height": 17.18187944280052,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.5192307692307693,
+						"originY": 0.4523809523809524,
 						"color": [
 							1,
 							1,

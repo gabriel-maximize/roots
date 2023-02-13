@@ -78,13 +78,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
@@ -145,7 +138,8 @@
 			"Sprite9",
 			"arbusto",
 			"hit_box",
-			"colision"
+			"colision",
+			"hitbox__inimigo1"
 		],
 		"subfolders": []
 	},

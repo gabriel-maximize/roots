@@ -14,11 +14,6 @@
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "TileMovement",
-			"name": "MovimentoEmGrid",
-			"sid": 301065391050377
-		},
-		{
 			"behaviorId": "scrollto",
 			"name": "CentrarEm",
 			"sid": 639882488019748
