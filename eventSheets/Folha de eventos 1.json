@@ -382,9 +382,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "personagem",
-							"sid": 551234666082824,
+							"sid": 346620989911919,
 							"parameters": {
-								"animation": "\"Esquerda\"",
+								"animation": "\"Direita\"",
 								"from": "beginning"
 							}
 						},
@@ -398,7 +398,31 @@
 							}
 						}
 					],
-					"sid": 210680796584868
+					"sid": 210680796584868,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-mirrored",
+									"objectClass": "personagem",
+									"sid": 175463410653071,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "personagem",
+									"sid": 374242092431701,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 312476491353991
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -439,9 +463,40 @@
 							"parameters": {
 								"control": "right"
 							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "personagem",
+							"sid": 126222064877358,
+							"parameters": {
+								"state": "not-mirrored"
+							}
 						}
 					],
-					"sid": 491414123618604
+					"sid": 491414123618604,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-mirrored",
+									"objectClass": "personagem",
+									"sid": 936344104251793
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "personagem",
+									"sid": 405415619478465,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 133922363110766
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -456,15 +511,6 @@
 						}
 					],
 					"actions": [
-						{
-							"callFunction": "Vida",
-							"sid": 892669053189963,
-							"disabled": true,
-							"parameters": [
-								"1",
-								false
-							]
-						},
 						{
 							"id": "set-boolean-instvar",
 							"objectClass": "inimigo_1",
@@ -669,15 +715,6 @@
 				}
 			],
 			"sid": 478718223306830
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Colisões",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 225860201472813
 		},
 		{
 			"eventType": "group",
@@ -1223,9 +1260,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "personagem",
-									"sid": 319215735092402,
+									"sid": 598542779880457,
 									"parameters": {
-										"animation": "\"Descansando-frente\"",
+										"animation": "\"idle\"",
 										"from": "beginning"
 									}
 								}
@@ -1619,176 +1656,176 @@
 						}
 					],
 					"sid": 416166738163589
+				},
+				{
+					"functionName": "Vida--inimigos",
+					"functionDescription": "Controle de vida dos inimigos",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "id",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 858655201148783
+						},
+						{
+							"name": "qtd",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"sid": 468718033898679
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 872919752355406,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 772635673308866,
+									"parameters": {
+										"variable": "id",
+										"comparison": 0,
+										"value": "\"inimigo_1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "inimigo_1",
+									"sid": 637945487855932,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "inimigo_1",
+									"sid": 682010618516168,
+									"parameters": {
+										"instance-variable": "vida",
+										"value": "qtd"
+									}
+								}
+							],
+							"sid": 198894732472886,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "inimigo_1",
+											"sid": 867387603856772,
+											"parameters": {
+												"instance-variable": "vida",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "inimigo_1",
+											"sid": 480829935769922
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "inimigo_1",
+											"sid": 270324358578230,
+											"parameters": {
+												"object": "vida",
+												"layer": "1",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 810347406567876
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 567791570903560,
+									"parameters": {
+										"variable": "id",
+										"comparison": 0,
+										"value": "\"boss_1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "boss_1",
+									"sid": 653447631229653,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "boss_1",
+									"sid": 641324741285748,
+									"parameters": {
+										"instance-variable": "vida",
+										"value": "qtd"
+									}
+								}
+							],
+							"sid": 518141496642861,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "boss_1",
+											"sid": 365063571779897,
+											"parameters": {
+												"instance-variable": "vida",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "boss_1",
+											"sid": 593326951092035
+										}
+									],
+									"sid": 533757254628777
+								}
+							]
+						}
+					]
 				}
 			],
 			"sid": 753775001536634
-		},
-		{
-			"functionName": "Vida--inimigos",
-			"functionDescription": "Controle de vida dos inimigos",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "id",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"sid": 858655201148783
-				},
-				{
-					"name": "qtd",
-					"type": "number",
-					"initialValue": "1",
-					"comment": "",
-					"sid": 468718033898679
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 985506790109253,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 147816874524394,
-							"parameters": {
-								"variable": "id",
-								"comparison": 0,
-								"value": "\"inimigo_1\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "flash",
-							"objectClass": "inimigo_1",
-							"sid": 599055066992962,
-							"behaviorType": "Flash",
-							"parameters": {
-								"on-time": "0.1",
-								"off-time": "0.1",
-								"duration": "1.0"
-							}
-						},
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "inimigo_1",
-							"sid": 662012384315625,
-							"parameters": {
-								"instance-variable": "vida",
-								"value": "qtd"
-							}
-						}
-					],
-					"sid": 216243557840581,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "inimigo_1",
-									"sid": 489056417354842,
-									"parameters": {
-										"instance-variable": "vida",
-										"comparison": 3,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "inimigo_1",
-									"sid": 904361942382270
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "inimigo_1",
-									"sid": 417812079919786,
-									"parameters": {
-										"object": "vida",
-										"layer": "1",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								}
-							],
-							"sid": 977022524149361
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 573615333043518,
-							"parameters": {
-								"variable": "id",
-								"comparison": 0,
-								"value": "\"boss_1\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "flash",
-							"objectClass": "boss_1",
-							"sid": 875436774415099,
-							"behaviorType": "Flash",
-							"parameters": {
-								"on-time": "0.1",
-								"off-time": "0.1",
-								"duration": "1.0"
-							}
-						},
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "boss_1",
-							"sid": 682935794422079,
-							"parameters": {
-								"instance-variable": "vida",
-								"value": "qtd"
-							}
-						}
-					],
-					"sid": 112898010413016,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "boss_1",
-									"sid": 105543763744191,
-									"parameters": {
-										"instance-variable": "vida",
-										"comparison": 3,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "boss_1",
-									"sid": 180007261606370
-								}
-							],
-							"sid": 970888876484912
-						}
-					]
-				}
-			]
 		}
 	],
 	"sid": 149472374555292
