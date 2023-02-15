@@ -6995,8 +6995,8 @@
 						}
 					},
 					"world": {
-						"x": 118.72969342338979,
-						"y": 939.1821914176544,
+						"x": 316,
+						"y": 236,
 						"width": 20.532682054954563,
 						"height": 24.283845122686646,
 						"originX": 0.48717948717948717,
@@ -7100,8 +7100,8 @@
 						}
 					},
 					"world": {
-						"x": 427,
-						"y": 967,
+						"x": 458,
+						"y": 98,
 						"width": 22.144639313086387,
 						"height": 17.18187944280052,
 						"originX": 0.5192307692307693,
@@ -7167,6 +7167,158 @@
 						"height": 61,
 						"originX": 0.25,
 						"originY": 0.48360655737704916,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "inimigo_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ataque",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 291,
+					"instanceVariables": {
+						"vida": 2,
+						"ataque": false
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 50,
+								"cone-of-view": 90,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 2,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 860.714937128516,
+						"y": 159.88655108714693,
+						"width": 22.144639313086387,
+						"height": 17.18187944280052,
+						"originX": 0.5192307692307693,
+						"originY": 0.4523809523809524,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "inimigo_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ataque",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 292,
+					"instanceVariables": {
+						"vida": 2,
+						"ataque": false
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 50,
+								"cone-of-view": 90,
+								"use-collision-cells": true
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 50000,
+								"deceleration": 50000,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 8,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 30,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 582.5950927734375,
+						"y": 221.7621480841725,
+						"width": 22.144639313086387,
+						"height": 17.18187944280052,
+						"originX": 0.5192307692307693,
+						"originY": 0.4523809523809524,
 						"color": [
 							1,
 							1,

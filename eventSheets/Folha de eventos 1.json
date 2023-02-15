@@ -497,221 +497,6 @@
 							"sid": 133922363110766
 						}
 					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "inimigo_1",
-							"sid": 272392599994326,
-							"parameters": {
-								"object": "personagem"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "inimigo_1",
-							"sid": 135063085409072,
-							"parameters": {
-								"instance-variable": "ataque",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 387307378288647
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 913368838369986,
-							"parameters": {
-								"object": "inimigo_1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 180649045174536,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "inimigo_1",
-									"sid": 166735076528000,
-									"parameters": {
-										"instance-variable": "ataque"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "hitbox__inimigo1",
-									"sid": 658573427989454,
-									"parameters": {
-										"x": "-100",
-										"y": "-100"
-									}
-								}
-							],
-							"sid": 429177890701217,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 824747872907144,
-											"parameters": {
-												"first-value": "inimigo_1.Sine.CyclePosition",
-												"comparison": 2,
-												"second-value": "0.25"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 213572652627849,
-											"parameters": {
-												"first-value": "inimigo_1.Sine.CyclePosition",
-												"comparison": 4,
-												"second-value": "0.75"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "inimigo_1",
-											"sid": 255147751482285,
-											"parameters": {
-												"animation": "\"andando-direita\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "inimigo_1",
-											"sid": 598913652848726,
-											"parameters": {
-												"state": "mirrored"
-											}
-										}
-									],
-									"sid": 721104121795498,
-									"isOrBlock": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 537102039809446
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "inimigo_1",
-											"sid": 807058234607198,
-											"parameters": {
-												"animation": "\"andando-direita\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "inimigo_1",
-											"sid": 302041320254493,
-											"parameters": {
-												"state": "not-mirrored"
-											}
-										}
-									],
-									"sid": 362058903127040
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "inimigo_1",
-									"sid": 831758138491739,
-									"parameters": {
-										"instance-variable": "ataque"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-active",
-									"objectClass": "inimigo_1",
-									"sid": 367991267688725,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "inactive"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "inimigo_1",
-									"sid": 596530382609919,
-									"parameters": {
-										"animation": "\"ataque\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-position-to-another-object",
-									"objectClass": "hitbox__inimigo1",
-									"sid": 943044133338869,
-									"parameters": {
-										"object": "inimigo_1",
-										"image-point-optional": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 234871382021841,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "inimigo_1",
-									"sid": 733975101823330,
-									"parameters": {
-										"instance-variable": "ataque",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-active",
-									"objectClass": "inimigo_1",
-									"sid": 263501705136066,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "active"
-									}
-								}
-							],
-							"sid": 609883013409624
-						}
-					]
 				}
 			],
 			"sid": 478718223306830
@@ -723,30 +508,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "inimigo_1",
-							"sid": 207182250255631,
-							"parameters": {
-								"object": "hit_box"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "Vida--inimigos",
-							"sid": 325874425307191,
-							"parameters": [
-								"\"inimigo_1\"",
-								"1"
-							]
-						}
-					],
-					"sid": 135852900349713
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -770,6 +531,291 @@
 						}
 					],
 					"sid": 758487830107264
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 329458127820482,
+							"parameters": {
+								"object": "inimigo_1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 738962208642818,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "inimigo_1",
+									"sid": 931320079376279,
+									"parameters": {
+										"object": "hit_box"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "inimigo_1",
+									"sid": 253738342782360,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "inimigo_1",
+									"sid": 901618481729362,
+									"parameters": {
+										"instance-variable": "vida",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 213792402984397
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "inimigo_1",
+									"sid": 673410461304320,
+									"parameters": {
+										"instance-variable": "vida",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "inimigo_1",
+									"sid": 661151309437866
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "inimigo_1",
+									"sid": 898533519356975,
+									"parameters": {
+										"object": "vida",
+										"layer": "1",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 240374086570554
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "inimigo_1",
+									"sid": 457385792165524,
+									"parameters": {
+										"instance-variable": "ataque"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "hitbox__inimigo1",
+									"sid": 721522397905610,
+									"parameters": {
+										"x": "-100",
+										"y": "-100"
+									}
+								}
+							],
+							"sid": 480611026684911,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 892294876207927,
+											"parameters": {
+												"first-value": "inimigo_1.Sine.CyclePosition",
+												"comparison": 2,
+												"second-value": "0.25"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 153519067384928,
+											"parameters": {
+												"first-value": "inimigo_1.Sine.CyclePosition",
+												"comparison": 4,
+												"second-value": "0.75"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "inimigo_1",
+											"sid": 175822420162415,
+											"parameters": {
+												"animation": "\"andando-direita\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "inimigo_1",
+											"sid": 719533601666333,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 421523925086754,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 790867069835852
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "inimigo_1",
+											"sid": 477286814359678,
+											"parameters": {
+												"animation": "\"andando-direita\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "inimigo_1",
+											"sid": 870253489559638,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 196687933815606
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "inimigo_1",
+									"sid": 360009674797476,
+									"parameters": {
+										"instance-variable": "ataque"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "inimigo_1",
+									"sid": 711001660255986,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "inimigo_1",
+									"sid": 348743348365386,
+									"parameters": {
+										"animation": "\"ataque\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "hitbox__inimigo1",
+									"sid": 888161031492965,
+									"parameters": {
+										"object": "inimigo_1",
+										"image-point-optional": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 183452927206154,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "inimigo_1",
+									"sid": 582006566735410,
+									"parameters": {
+										"instance-variable": "ataque",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "inimigo_1",
+									"sid": 860340109798201,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								}
+							],
+							"sid": 475991179664684
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "inimigo_1",
+							"sid": 237336498663716,
+							"parameters": {
+								"object": "personagem"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "inimigo_1",
+							"sid": 676701360015318,
+							"parameters": {
+								"instance-variable": "ataque",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 624234063284006
 				},
 				{
 					"eventType": "block",
@@ -1685,80 +1731,6 @@
 					"actions": [],
 					"sid": 872919752355406,
 					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 772635673308866,
-									"parameters": {
-										"variable": "id",
-										"comparison": 0,
-										"value": "\"inimigo_1\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "flash",
-									"objectClass": "inimigo_1",
-									"sid": 637945487855932,
-									"behaviorType": "Flash",
-									"parameters": {
-										"on-time": "0.1",
-										"off-time": "0.1",
-										"duration": "1.0"
-									}
-								},
-								{
-									"id": "subtract-from-instvar",
-									"objectClass": "inimigo_1",
-									"sid": 682010618516168,
-									"parameters": {
-										"instance-variable": "vida",
-										"value": "qtd"
-									}
-								}
-							],
-							"sid": 198894732472886,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "inimigo_1",
-											"sid": 867387603856772,
-											"parameters": {
-												"instance-variable": "vida",
-												"comparison": 3,
-												"value": "0"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "inimigo_1",
-											"sid": 480829935769922
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "inimigo_1",
-											"sid": 270324358578230,
-											"parameters": {
-												"object": "vida",
-												"layer": "1",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										}
-									],
-									"sid": 810347406567876
-								}
-							]
-						},
 						{
 							"eventType": "block",
 							"conditions": [
