@@ -339,9 +339,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "personagem",
-							"sid": 263976954085395,
+							"sid": 992272108864019,
 							"parameters": {
-								"animation": "\"Frente\"",
+								"animation": "\"Cima\"",
 								"from": "beginning"
 							}
 						},
